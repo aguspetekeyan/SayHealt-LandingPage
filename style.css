@@ -1,0 +1,690 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.nav-bar {
+    background: rgb(74, 183, 229);
+    height: 80px;
+    gap: 30px;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.nav-bar h1 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav-bar h1 :hover {
+    color: #007bff;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation li{
+    list-style-type: none;
+    padding: 15px;
+}
+.navigation li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navigation li :hover{
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+}
+
+.navigation-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation-2 li{
+    padding: 10px;
+    list-style-type: none;
+}
+.navigation-2 li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navigation-2 .navbar-action-item {
+    display: inline-block; /* membuat link menjadi inline-block agar dapat diberi padding */
+    color: #fff; /* warna teks pada tombol */
+    border: 2px solid rgb(23, 235, 100);
+    padding: 6px 14px; /* ukuran padding di dalam tombol */
+    /* tambahkan border pada link */
+    border-radius: 10px; /* membuat sudut tombol sedikit bulat */
+    cursor: pointer; /* ubah kursor menjadi tanda tangan ketika diarahkan pada tombol */
+    font-size: 14px; /* ukuran teks pada tombol */
+    font-weight: bold; /* tebal teks pada tombol */
+    transition: all 0.2s ease-in-out; /* efek transisi ketika link di-hover */
+}
+.navigation-2 .navbar-action-item-daftar {
+    display: inline-block; /* membuat link menjadi inline-block agar dapat diberi padding */
+    color: #fff; /* warna teks pada tombol */
+    background-color: rgb(137, 230, 137);
+    padding: 8px 16px; /* ukuran padding di dalam tombol */
+    /* tambahkan border pada link */
+    border-radius: 10px; /* membuat sudut tombol sedikit bulat */
+    cursor: pointer; /* ubah kursor menjadi tanda tangan ketika diarahkan pada tombol */
+    font-size: 14px; /* ukuran teks pada tombol */
+    font-weight: bold; /* tebal teks pada tombol */
+    transition: all 0.2s ease-in-out; /* efek transisi ketika link di-hover */
+}
+.navbar-action-item:hover {
+    color: #fff;
+    background-color:  rgb(47, 232, 115);
+}
+.navbar-action-item-daftar:hover {
+    color: #fff;
+    background-color:  rgb(47, 232, 115);
+}
+
+.hero-container{
+    display: flex;
+    height: 470px;
+    padding: 0 10%;
+    background-color:  rgb(218, 231, 233);
+}
+.hero-container > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-container h1{
+    font-size: 35px;
+    width: 360px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.hero-container p{
+    font-size: 15px;
+}
+.hero-container button{
+    padding: 1.2em 2em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(200, 232, 250);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.hero-container button:hover {
+    background-color: rgb(74, 183, 229);
+    box-shadow: 0px 15px 20px rgba(112, 198, 232, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+.hero-container button:active {
+    transform: translateY(-1px);
+  }
+.hero-container > img{
+    width: 50%;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.description-container{
+    background-color: green;
+    margin: 243;
+}
+
+/* Daftar Penyakit */
+
+.penyakit{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    padding: 1.4 rem 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.penyakit .penyakit-content{
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.penyakit .penyakit-content p{
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.penyakit .daftar-penyakit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.penyakit .daftar-penyakit .penyakit-item{
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.penyakit .daftar-penyakit .penyakit-item .penyakit-item-content{
+    width: 11rem;
+    height: 10rem;
+    border: 1px solid rgb(223, 222, 222);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;   
+    align-items: center; 
+    cursor: pointer;
+}
+
+.penyakit-item-content .gambar-penyakit{
+    margin-bottom: 1rem;
+    width: 5.4rem;
+    height: 5.4rem;
+    object-fit: cover;
+}
+
+.penyakit-item-content .penyakit-item-title{
+    font-size: 0.9rem;
+    font-weight: 600; 
+}
+
+.penyakit-item-content:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+<!-- Dokter Rekomendasi -->
+
+.doctor-rekomendation {
+    text-align: center;
+}
+.doctor-recomendation-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-left: 10px;
+}
+  
+.doctor-recomendation-card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    border-radius: 4px;
+    padding: 16px;
+    width: 500px;
+    border-radius: 9px;
+    background-color: #ffffff;
+    margin-top: 24px;
+    max-width: 100%;
+    margin-right: 48px;
+}
+  
+.doctor-recomendation-card-item:hover{
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+  
+.doctor-recomendation-text{
+    text-align: left;
+}
+  
+.doctor-recomendation-text h2{
+    margin-left: 32px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+  
+.doctor-recomendation-text p{
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #66707A;
+}
+  
+.doctor-recomendation-card-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+  
+.doctor-recomendation-card h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+.pricing-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.pricing-action button {
+    padding: 10px 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(200, 232, 250);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+.pricing-action button:hover {
+    background-color: rgb(74, 183, 229);
+    box-shadow: 0px 15px 20px rgba(112, 198, 232, 0.4);
+    color: #fff;
+}
+  
+.pricing-info{
+    margin-right: 96px;
+    text-align: left;
+  }
+  
+.pricing-info p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #66707A;
+  }
+  
+.pricing-info h5 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #F58736;
+}
+  
+.pricing-section{
+    margin-top: 16px;
+}
+
+
+
+/* Testimonial */
+
+.daftar-testimoni{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 3.5rem;
+    padding: 1.4 rem 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.daftar-testimoni .testimoni-content{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daftar-testimoni .testimoni-content p{
+    margin-right: 32px;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.daftar-testimoni .testimoni-content .button{
+    padding: 10px 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(200, 232, 250);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.daftar-testimoni .testimoni-content .button:hover{
+    background-color: rgb(74, 183, 229);
+    box-shadow: 0px 15px 20px rgba(112, 198, 232, 0.4);
+    color: #fff;
+}
+
+.testimoni{
+    margin-top: 2rem;
+    height: autorem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.testimoni .card-testimoni {
+    background-color: white;
+    width: 35%;
+    height: 12rem;
+    border: 1px solid rgb(178, 199, 237);
+    border-radius: 1rem;
+    display: flex;
+    margin-right: 50px;
+    flex-direction: column;  
+    justify-content: center;   
+    cursor: pointer; 
+    padding: 2rem;
+  }
+  
+    .card-testimoni:hover {
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(101, 168, 222, 0.2);
+  }
+
+
+  .testimoni .card-testimoni .testimoni-star
+  {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    height: 2rem;
+  }
+  .testimoni-star a{
+    max-width: 30px;
+    max-height: 30px;
+    color: #66707A;
+  }
+
+
+  .card-testimoni p{
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--gray-dark);
+    width: 100%;
+    text-align: left;
+  }
+
+  
+  .container-testimoni {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 4rem;
+    padding: 0%;
+}  
+
+.card-testimoni .container-testimoni img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+
+  .card-testimoni .container-id {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 10rem;
+    height: auto;
+  }
+
+
+  .container-testimoni .container-id h4{
+    height: 25%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-dark);
+  }
+
+  .container-testimoni .container-id p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--gray-dark);
+  }
+
+
+
+/* Footer */
+.footer-section{
+    background: rgb(74, 183, 229);
+    padding: 2 6rem;
+    position: relative;
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+}
+.company{
+    margin-left: 6rem;
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 40%;
+    height: 50%;
+    color: #fff;
+}
+.company h1 a {
+  text-decoration: none;
+  color: white;
+}
+.company h1 :hover {
+    color: #007bff;
+}
+.company .img{
+    padding: 3px;
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.company .company-item{
+    margin-top: 1rem;
+    width: 50%;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.footer-section .about{
+    display:flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 50%;
+    margin-top: 3rem;
+    margin-right: 5,5rem;
+
+}
+
+.about .title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.about .fitur {
+    width: 50%;
+    height: 100%;
+    border-bottom: 2px;
+}
+
+.about .fitur-item {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about .fitur-item a{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 6px;
+    text-decoration: none;
+}
+
+/* Form Daftar */
+
+.form-daftar {
+    margin: 0 6rem;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 42rem;
+    padding: 3rem;
+    border-radius: 12px;
+    background-color: var(--teal);
+
+}
+
+.form-daftar-title{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    color: var(--white);
+}
+
+.form-daftar-title h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.form-daftar-title p{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.form-daftar-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.pesan {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 400px;
+  }
+
+.label{
+    text-align: left;
+    color: var(--white);
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+width: 400px;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 10px;
+border: 1px solid #ccc;
+}
+
+input type="checkbox" {
+    
+}
+
+.form-daftar-item .cek{
+    display:flex;
+    justify-content: center;
+    width: 35%;
+    height: auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.mate{
+    display: flex;
+    width: 400px;
+    height: 80px;
+}
+
+.mate label{
+    color: var(--white);
+    width: 400px;
+}
+
+label[for="check"] {
+margin-bottom: 20px;
+font-size: 14px;
+}
+
+#warning {
+color: rgb(255, 255, 255);
+font-size: 0.9rem;
+font-weight: 600;
+margin-bottom: 8px;
+padding: 5px 10px;
+border-radius: 12px;
+background-color: red;
+visibility: hidden;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(200, 232, 250);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.bt:hover{
+    background-color: rgb(74, 183, 229);
+    box-shadow: 0px 15px 20px rgba(112, 198, 232, 0.4);
+    color: #fff;
+}
